@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include("partials/head") %>
+<body>
+    <div class="log-out">
+    <a href="/logout">Log out</a>
+</div>
+     <h3 class="welcome-text">Welcome <%= userName %></h3>
+    <% if(userLogged) {%>
+        <div class="form user-info">
+            <h3>User Info</h3>
+            <p>First Name: <%= userLogged.firstName%></p>
+            <p>Last Name: <%= userLogged.lastName%></p>
+            <p>Email Address: <%= userLogged.email %></p>
+            <p>Password:Not this time!</p>
+        </div>
+      
+   <% } else{%>
+      <p>Please log in to see the user info</p>
+
+  <% } %>
+</body>
+</html>

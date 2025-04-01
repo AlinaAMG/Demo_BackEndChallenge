@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include("partials/head") %>
+  <body>
+    <div class="container">
+      <h2>Login And Registration</h2>
+      <div class="form">
+        <h3>Login</h3>
+        <form action="/user/login" method="POST">
+          <div class="form-container">
+            <div class="labels1">
+              <p>Email:</p>
+              <p>Password:</p>
+            </div>
+            <div class="form-input">
+              <input type="email" name="email" id="email" autocomplete="off" />
+              <input type="password" name="password" id="password" autocomplete="off" />
+            </div>
+          </div>
+          <div class="btn">
+            <button type="submit">Login</button>
+         </div>
+         </form>
+         <p class="msg"><%=userMsg  %></p>
+         <p class="msg"><%=passw  %></p>
+         <p class="msg"><%= messageM %></p>
+        
+      </div>
+
+      <div class="form">
+        <h3>Register</h3>
+        <form action="/user/signup" method="POST">
+            <div class="form-container">
+                <div class="labels2">
+                    <p>First Name:</p>
+                    <p>Last Name:</p>
+                    <p>Email Address:</p>
+                    <p>Password:</p>
+                    <p>Confirm Password:</p>
+                 </div>
+             <div class="form-input">
+               <input type="text" name="firstName" id="firstName" />
+               <input type="text" name="lastName" id="lastName" />
+               <input type="email" name="email" id="email" autocomplete="off" />
+               <input type="password" name="password" id="password" autocomplete="off" />
+               <input type="password" name="confirmPassword" />
+             </div>
+            </div>
+            <div class="btn">
+              <button type="submit">Register</button>
+            </div>
+            <p class="msg"><%= message %></p>
+            <p class="msg"><%= msg %></p>
+            <p class="msg"><%=msgPass %></p>
+            <p class="msg"><%= result %></p>
+          </form>
+      </div>
+   
+  </body>
+</html>

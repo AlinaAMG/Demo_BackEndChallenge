@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .container {
+    width: 80%;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .container h2 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .form {
+    width: 90%;
+    padding: 20px;
+    margin: 50px auto;
+    border: 3px solid black;
+  
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    background-color: white;
+    position: relative;
+  }
+  
+  .form h3 {
+    position: absolute;
+    top: -15px;
+    left: 30%;
+    transform: translateX(-50%);
+    background-color: white;
+    padding: 0 10px;
+    font-weight: bold;
+  }
+  .form-container {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  .labels1 p {
+    margin-bottom: 30px;
+    font-weight: 600;
+  }
+  .labels2 p {
+    margin-bottom: 20px;
+    padding: 10px;
+    font-weight: 600;
+  }
+  .form-input {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-input input {
+    padding: 10px;
+    margin-left: 20px;
+    width: 120%;
+    margin-bottom: 20px;
+  }
+  button {
+    padding: 10px;
+    color: #333;
+    border: 2px solid #333;
+    border-bottom: 4px solid rgb(0, 0, 0);
+    border-right: 4px solid rgb(0, 0, 0);
+    font-size: 20px;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.6);
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #666;
+    color: #fff;
+  }
+  .btn {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 40px;
+  }
+  
+  .not-found {
+    text-align: center;
+    display: flex;
+    background-color: rgb(246, 231, 231);
+    height: 30vh;
+    justify-content: center;
+    align-items: center;
+  }
+  .msg {
+    font-size: 20px;
+    color: red;
+    margin-bottom: 20px;
+  }
+  
+  .user-info {
+    margin-top: 100px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+  
+    align-items: flex-start;
+  }
+  .user-info p {
+    margin-bottom: 20px;
+    font-size: 20px;
+    margin-left: 40px;
+  }
+  .welcome-text {
+    font-size: 26px;
+    width: 70%;
+    margin: 80px auto;
+  }
+  .log-out {
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 100px;
+    font-size: 24px;
+  }
+  .log-out a {
+    color: rgb(84, 111, 244);
+  }
+  
