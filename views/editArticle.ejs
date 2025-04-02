@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include("partials/head") %>
+<body>
+    <div class="container">
+     <nav>
+        <a href="/article/<%= article._id %>">Back</a>
+     </nav>
+     <form action="/edit/article/<%= article._id%>" method="POST">
+        <label for="title">Title:</label>
+        <input id="title" type="text" name="title"value="<%= article.title %>" />
+
+        <label for="textarea">Article:</label>
+        <textarea name="article" id="textarea" rows="8">"<%= article.article %>"</textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+</body>
+</html>

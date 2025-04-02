@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include("partials/head") %>
+  <body>
+    <div class="container">
+      <nav>
+        <h2>New Article</h2>
+        <a class="back-link" href="/">Back</a>
+      </nav>
+
+      <form action="/new/article" method="POST">
+        <label for="title">Title:</label>
+        <input id="title" type="text" name="title"/>
+
+        <label for="textarea">Article:</label>
+        <textarea name="article" id="textarea" rows="7"></textarea>
+
+        <p class="msg"><%= message %></p>
+        <p class="msg"><%= msg %></p>
+        <button type="submit">Add Article</button>
+        
+      </form>
+    </div>
+  </body>
+</html>

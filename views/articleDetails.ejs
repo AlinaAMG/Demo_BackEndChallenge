@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include("partials/head") %>
+<body>
+ <div class="container">
+     <nav>
+        <a href="/">Back</a>
+     </nav>
+
+     <div class="article">
+       <h1><%= article.title %></h1>
+       <p><%= article.article %></p>
+    </div>
+    
+
+    <div class="links">
+         <a href="/edit/article/<%= article._id %>">Edit Article</a>
+         <a href="/article/delete/<%= article._id%>">Delete Article</a>
+    </div>
+  </div>
+</body>
+</html>

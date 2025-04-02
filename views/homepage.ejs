@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include("partials/head") %>
+
+
+<body>
+  <div class="container">
+  <nav>
+    <h1>The New York Times</h1>
+    <a href="/new/article">Add new article</a>
+  </nav>
+ 
+  <!-- show message by deleting the article -->
+  <% if (messageDelete) { %>
+    <div class="alert alert-success">
+      <%= messageDelete %>
+    </div>
+
+    <!-- show message by adding the article -->
+  <% } %>
+   <% if(messageSuccess) {%>
+    <div class="alert alert-success">
+      <%= messageSuccess %>
+      </div>
+  <% }%>
+ 
+  <ul>
+    <%if(articles.length >0) {%>
+    <% articles.forEach(article => { %>
+      <li>
+        <div class="article">
+          <h2 >
+            <a href="/article/<%= article._id %>"><%= article.title %></a>
+          </h2>
+          <p><%= article.article.substring(0,100) %></p>
+        </div>
+      </li>
+    <% }) %> 
+    <% } else {%>
+       <p class="no-articles">There are no articles to display.Add a new article please.</p>
+    <%}%>
+  </ul>
+
+</div>
+</body>
+</html>
