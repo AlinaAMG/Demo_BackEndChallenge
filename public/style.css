@@ -1,0 +1,92 @@
+body{
+    font-family: 'Nunito';
+}
+
+h2{
+    font-size: 18px;
+    padding: 10px 20px;
+    color: #575ed8;
+}
+
+#mario-chat{
+    max-width: 700px;
+    margin: 50px auto;
+    border: 1px solid #ddd;
+    box-shadow: 1px 3px 5px rgba(0,0,0,0.05);
+    border-radius: 2px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.7);
+  
+ 
+}
+
+
+#chat-window{
+    height: 500px;
+    overflow: auto;
+    background: #f9f9f9;
+    background-image: url('https://plus.unsplash.com/premium_photo-1721955487745-a2c3aea86d1c?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y2hhdCUyMG1lc3NhZ2V8ZW58MHx8MHx8fDA%3D'); 
+    background-size: cover;      
+    background-repeat: no-repeat;
+    background-position: center center;
+              
+    margin: 0;
+}
+
+#output p{
+    padding: 14px 0px;
+    margin: 0 20px;
+    border-bottom: 1px solid #e9e9e9;
+    color: #555;
+}
+
+#feedback p{
+    color: #aaa;
+    padding: 14px 0px;
+    margin: 0 20px;
+}
+
+#output strong{
+    color: #575ed8;
+}
+
+label{
+    box-sizing: border-box;
+    display: block;
+    padding: 10px 20px;
+}
+
+input{
+    padding: 10px 20px;
+    box-sizing: border-box;
+    background: #eee;
+    border: 0;
+    display: block;
+    width: 100%;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    font-family: Nunito;
+    font-size: 16px;
+}
+
+button{
+    background: #575ed8;
+    color: #fff;
+    font-size: 18px;
+    border: 0;
+    padding: 12px 0;
+    width: 100%;
+    border-radius: 0 0 2px 2px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #737af9;
+    transform: scale(1.008);
+    font-weight: bold;
+}
+.message {
+   background-color: rgb(255, 247, 247);
+   font-weight:600;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+  }
